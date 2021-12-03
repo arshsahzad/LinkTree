@@ -76,7 +76,10 @@
                   hiding out in quarantine. Our best developer is on the case.
                 </p>
 
-                <a href="https://www.arsh.dev/" class="link_404">Go to Home</a>
+                <a href="https://www.arsh.dev/" class="link_404"
+                  >Redirecting to Home in
+                  <span id="countdowntimer">25</span> Seconds</a
+                >
               </div>
             </div>
           </div>
@@ -84,5 +87,13 @@
       </div>
     </section>
     <!-- partial -->
+    <script type="text/javascript">
+      var timeleft = 25;
+      var downloadTimer = setInterval(function () {
+        timeleft--;
+        document.getElementById("countdowntimer").textContent = timeleft;
+        if (timeleft <= 0) clearInterval(downloadTimer);
+      }, 1000);
+    </script>
   </body>
 </html>
