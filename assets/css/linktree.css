@@ -1,0 +1,27 @@
+body {
+  background-color: #bbbbbb;
+}
+h5 {
+  color: #343a40;
+}
+.name {
+  color: #343a40;
+}
+.love {
+  color: #343a40 !important;
+}
+/*----------------- Mail-------------------- */
+#email {
+  text-decoration: none;
+  float: right;
+  color: #343a40;
+}
+.footer {
+  margin-top: 5% !important;
+  margin-bottom: 10px;
+}
+@media (max-width: 479px) {
+  .footer {
+    margin-top: 35% !important;
+  }
+}
